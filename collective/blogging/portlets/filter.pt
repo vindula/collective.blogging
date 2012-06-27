@@ -3,7 +3,7 @@
 
     <dt class="portletHeader">
         <span class="portletTopLeft"></span>
-        <tal:block i18n:translate="label_filter_posts">Filter posts</tal:block>
+        <span i18n:translate="label_filter_posts">Filter posts</span>
         <span class="portletTopRight"></span>
     </dt>
 
