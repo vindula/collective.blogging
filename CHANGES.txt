@@ -1,0 +1,9 @@
+Changelog
+=========
+
+1.0 (released)
+------------------
+
+1.1.1 - 2012-06-15
+-------------------
+- Ajustes no método js que recarrega a área de conteúdo do portal, para não carregar na homepage 
