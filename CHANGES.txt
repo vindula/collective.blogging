@@ -6,4 +6,8 @@ Changelog
 
 1.1.1 - 2012-06-15
 -------------------
-- Ajustes no método js que recarrega a área de conteúdo do portal, para não carregar na homepage 
+- Ajustes no método js que recarrega a área de conteúdo do portal, para não carregar na homepage
+
+1.1.2 - 2012-09-04
+---------------------
+- Ajustes na tradução dos portlets 

@@ -165,7 +165,7 @@ msgstr "Excluir da navegação"
 
 #: ./portlets/archive.py:45
 msgid "Extend title"
-msgstr "Extender título"
+msgstr "Estender título"
 
 #: ./browser/help.pt:288
 msgid "File entry"
