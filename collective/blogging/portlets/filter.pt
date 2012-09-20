@@ -60,7 +60,7 @@
         </form>
     </dd>
 
-    <dd class="portletFooter blogPostsCount" tal:condition="nothing">
+    <dd class="portletFooter blogPostsCount" tal:condition="view/show_count">
         <span class="portletBottomLeft"></span>
         <tal:count
             tal:condition="view/show_count"
@@ -70,6 +70,6 @@
         <span class="portletBottomRight"></span>
     </dd>
 	
-	<dd class="portletFooter" tal:condition="not:nothing"></dd>
+	<dd class="portletFooter" tal:condition="not:view/show_count"></dd>
 
 </dl>
