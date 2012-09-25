@@ -73,7 +73,9 @@ function bloggingMonitorHash() {
         jq('#content').load(url + '?ajax_load=' + nocaching + '&' + param.substring(1) + ' #content>div', function() {
             // reset feedback for user
             jq('body').css('cursor', 'auto');
+			jq('#cont_ponts').html(jq('#content').find('.blogListingEntry').length);
         });
+		
         // Finally, updates last hash
         bloggingLastHash = param;
     }

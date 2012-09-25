@@ -65,7 +65,7 @@
         <tal:count
             tal:condition="view/show_count"
             i18n:translate="label_blog_posts_count">
-            Found <b i18n:name="count" tal:content="view/count">99</b> posts.
+            Found <b i18n:name="count" tal:content="view/count" id="cont_ponts" >99</b> posts.
         </tal:count>
         <span class="portletBottomRight"></span>
     </dd>
