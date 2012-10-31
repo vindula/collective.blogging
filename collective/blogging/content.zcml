@@ -14,6 +14,11 @@
         <implements interface=".interfaces.IBloggable" />
     </class>
     
+    <class class="vindula.content.content.vindulafolder.VindulaFolder">
+        <implements interface=".interfaces.IBlog" />
+        <implements interface=".interfaces.IBloggable" />
+    </class>
+	
     <class class="Products.ATContentTypes.content.topic.ATTopic">
         <implements interface=".interfaces.IBloggable" />
     </class>

@@ -18,10 +18,10 @@ METADATA = [
     'publish_month',
 ]
 
-BLOG_TYPES = ('Folder', 'Topic')
+BLOG_TYPES = ('Folder', 'Topic', 'VindulaFolder', )
 BLOG_VIEWS = ('blog-view',)
 
-ENTRY_TYPES = ('Document', 'News Item', 'Event', 'File', 'Image', 'Link')
+ENTRY_TYPES = ('Document', 'News Item', 'Event', 'File', 'Image', 'Link', 'VindulaNews', )
 ENTRY_VIEWS = ('entry-view',)
 
 def setupCatalog(context):

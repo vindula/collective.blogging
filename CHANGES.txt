@@ -16,3 +16,8 @@ Changelog
 ---------------------
 - Correção Ticket #215 - Portlet Filter Blog
 - Ajustes Ticket #215 
+
+
+1.1.4 - 2012-10-31
+---------------------
+- Adição da interface do vindulafolder para o blog
