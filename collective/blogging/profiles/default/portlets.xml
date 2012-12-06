@@ -7,32 +7,32 @@
  
     <portlet
         addview="collective.blogging.ManagePortlet"
-        title="Manage blog"
-        description="A portlet which helps to manage blog's content."
+        title="Gerenciar blog"
+        description="Um portlet que ajuda a gerenciar o conteúdo do blog."
         i18n:attributes="title;
                          description"
     />
     
     <portlet
         addview="collective.blogging.ArchivePortlet"
-        title="Blog archive"
-        description="A portlet which displays blog archives."
+        title="Blog de ​​arquivo"
+        description="Um portlet que exibe arquivos do blog."
         i18n:attributes="title;
                          description"
     />
 
     <portlet
         addview="collective.blogging.SharePortlet"
-        title="Share Entry"
-        description="A portlet which displays share links."
+        title="Blog Compartilhamento"
+        description="Um portlet que exibe links para compartilhamentos."
         i18n:attributes="title;
                          description"
     />
 
     <portlet
         addview="collective.blogging.FilterPortlet"
-        title="Blog filter portlet"
-        description="A portlet which displays a filter form."
+        title="Blog filtro"
+        description="Um portlet que exibe um formulário de filtro."
         i18n:attributes="title;
         				description"
     />
