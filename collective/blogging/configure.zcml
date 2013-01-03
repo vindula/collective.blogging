@@ -29,10 +29,12 @@
         provides="archetypes.schemaextender.interfaces.IOrderableSchemaExtender"
         name="collective.blogging.entryextender" />
 
+    <!--  
     <adapter
         factory=".extenders.LinkExtender"
         provides="archetypes.schemaextender.interfaces.ISchemaExtender"
         name="collective.blogging.linkextender" />
+    -->
     
     <!-- Enable next/previous links for blogs -->
     <adapter factory=".nextprevious.BlogNextPrevious" />

@@ -221,31 +221,31 @@ class EntryExtender(object):
 
 
 
-class LinkExtender(object):
-    """ Add a new marker field to all ATLink based types. """
-    adapts(IATLink)
-    implements(ISchemaExtender, IBrowserLayerAwareExtender)
-
-    layer = IBloggingSpecific
-
-    fields = [
-
-        ExTextField('embedCode',
-            schemata = "blog",
-            write_permission = BLOG_PERMISSION,
-            default='',
-            default_content_type = 'text/plain',
-            allowable_content_types = ('text/plain',),
-            widget=TextAreaWidget(
-                label=_(u'label_embed', default=u'Embed'),
-                description=_(u'help_embed',
-                              default=u'Paste embed code for example youtube, google or other video content.'),
-            ),
-        ),
-    ]
-
-    def __init__(self, context):
-        self.context = context
-
-    def getFields(self):
-        return self.fields
+#class LinkExtender(object):
+#    """ Add a new marker field to all ATLink based types. """
+#    adapts(IATLink)
+#    implements(ISchemaExtender, IBrowserLayerAwareExtender)
+#
+#    layer = IBloggingSpecific
+#
+#    fields = [
+#
+#        ExTextField('embedCode',
+#            schemata = "blog",
+#            write_permission = BLOG_PERMISSION,
+#            default='',
+#            default_content_type = 'text/plain',
+#            allowable_content_types = ('text/plain',),
+#            widget=TextAreaWidget(
+#                label=_(u'label_embed', default=u'Embed'),
+#                description=_(u'help_embed',
+#                              default=u'Paste embed code for example youtube, google or other video content.'),
+#            ),
+#        ),
+#    ]
+#
+#    def __init__(self, context):
+#        self.context = context
+#
+#    def getFields(self):
+#        return self.fields
