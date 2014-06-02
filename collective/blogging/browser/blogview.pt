@@ -69,18 +69,34 @@
                                                        item_is_event    python:view.is_event(item_object);
                                                        item_can_edit    python:checkPermission('Modify portal content', item_object)">
 
+                                    
                                     <div class="blogListingEntry">
+                                        <div class="row post-blog">
+                                          <div class="columns large-12">
                                         <metal:entryTitle use-macro="context/blog_macros/macros/entry_title"/>
-                                        
-                                        <metal:entryDocumentByLine use-macro="context/blog_macros/macros/entry_documentbyline"/>
                                         
                                         <tal:shortView condition="not:show_body">
                                             <metal:entryEventInfo use-macro="context/blog_macros/macros/entry_event_info"/>
 
                                             <metal:entryTitleImage use-macro="context/blog_macros/macros/entry_title_image"/>
                                         </tal:shortView>
-                                        
-                                        <metal:entryDesc use-macro="context/blog_macros/macros/entry_description"/>
+                                         </div>
+                                            <div class="columns large-6 img-post-blog" tal:condition="item_object/getImageRelac">
+                                                    
+                                                    
+                                                                <img tal:attributes="src python: item_object.getImageRelac().absolute_url()+'/image_preview';
+                                                                                     alt item_object/imageCaption; 
+                                                                                     title item_object/imageCaption;">
+                                                            
+                                            </div>
+                                            <div class="columns large-6">
+                                                <metal:entryDesc use-macro="context/blog_macros/macros/entry_description"/>
+                                                <div class="blog-quem-fez">
+                                                    <metal:entryDocumentByLine use-macro="context/blog_macros/macros/entry_documentbyline"/>
+                                                    <metal:entryFooter use-macro="context/blog_macros/macros/entry_footer"/>
+                                                </div>
+                                            </div>
+                                         </div>
                                                                             
                                         <div class="tileBody">
                                             
@@ -103,7 +119,6 @@
                                         </div>
                                         <div class="visualClear"><!-- --></div>
                                     
-                                        <metal:entryFooter use-macro="context/blog_macros/macros/entry_footer"/>
                                     </div>
                                 </tal:block>
                             </tal:entries>

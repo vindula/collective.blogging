@@ -45,9 +45,11 @@
 
 <metal:entryDesc define-macro="entry_description">
     <div class="tileDesc" tal:condition="item_description">
+        <a href="#"  tal:attributes="href python:item_type in use_view_action and item_url+'/view' or item_url;">
         <p class="description" tal:content="python:view.formatPerex(item_description)">
             description
         </p>
+        </a>
     </div>
 </metal:entryDesc>
 
